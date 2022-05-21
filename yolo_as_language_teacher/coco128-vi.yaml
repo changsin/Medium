@@ -1,0 +1,30 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../datasets/coco128  # dataset root dir
+train: images/train2017  # train images (relative to 'path') 128 images
+val: images/train2017  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+nc: 80  # number of classes
+names: ['người', 'Xe đạp', 'xe ô tô', 'xe máy', 'Máy bay', 'xe buýt', 'tàu hỏa', 'xe tải', 'thuyền', 'đèn giao thông',
+        'vòi chữa cháy', 'biển báo dừng', 'Đồng hồ đỗ xe', 'Băng ghế', 'chim', 'con mèo', 'chú chó', 'con ngựa', 'con cừu', 'bò',
+        'con voi', 'con gấu', 'ngựa rằn', 'hươu cao cổ', 'balo', 'ô', 'túi xách tay', 'cà vạt', 'chiếc vali', 'chiếc dĩa nhựa ném',
+        'ván trượt', 'trượt tuyết', 'bóng thể thao', 'cánh diều', 'gậy bóng chày', 'găng tay bóng chày', 'ván trượt', 'ván lướt sóng',
+        'vợt tennis', 'chai', 'ly rượu', 'tách', 'cái nĩa', 'dao', 'cái thìa', 'bát', 'trái chuối', 'táo',
+        'bánh mì sandwich', 'trái cam', 'bông cải xanh', 'Cà rốt', 'bánh mì kẹp xúc xích', 'pizza', 'bánh vòng', 'bánh', 'cái ghế', 'đi văng',
+        'cây chậu', 'Giường', 'bàn ăn', 'phòng vệ sinh', 'TV', 'máy tính xách tay', 'con chuột', 'Xa xôi', 'bàn phím', 'điện thoại di động',
+        'lò vi sóng', 'lò', 'Máy nướng bánh mì', 'bồn rửa chén', 'tủ lạnh', 'sách', 'đồng hồ', 'lọ cắm hoa', 'cây kéo', 'gấu bông',
+        'máy sấy tóc', 'Bàn chải đánh răng']  # class names
+
+
+# Download script/URL (optional)
+download: https://ultralytics.com/assets/coco128.zip
