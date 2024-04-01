@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>SampleWebserver</string>
+    <key>Program</key>
+    <string>/Library/SampleWebserver/webserver_sample</string>
+    <key>ProgramArguments</key>
+    <array>
+      <string>/Library/SampleWebserver/webserver_sample</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>SoftResourceLimits</key>
+    <dict>
+        <key>NumberOfFiles</key>
+        <integer>256</integer>
+    </dict>
+    <key>StandardErrorPath</key>
+    <string>/var/tmp/sample_stderr.log</string>
+    <key>StandardOutPath</key>
+    <string>/var/tmp/sample_stdout.log</string>
+</dict>
+</plist>
