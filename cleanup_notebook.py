@@ -1,6 +1,6 @@
 import nbformat
 
-file_path = "./notebooks/promt_token_counts.ipynb"
+file_path = "./notebooks/prompt_token_counts.ipynb"
 
 with open(file_path, "r", encoding="utf-8") as f:
     nb = nbformat.read(f, as_version=4)
